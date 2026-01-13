@@ -90,12 +90,12 @@ async def other_features(message: types.Message):
     await cancel_user_task(message.from_user.id)
     await message.answer(f"{message.text} bo'limi faollashdi. ✨")
 
-# --- KOYEB SERVERI UCHUN MUHIM QISM ---
+# --- KOYEB VA ASYNCIO TUZATILGAN QISM ---
 async def main():
-    # 1. Botni ishga tushirish
+    # 1. Botni ishga tushirish (xatolarsiz)
     asyncio.create_task(dp.start_polling(bot))
 
-    # 2. Koyeb kutayotgan 8000-portda soxta server yoqish
+    # 2. Koyeb port xatosini yopish uchun soxta server
     app = web.Application()
     runner = web.AppRunner(app)
     await runner.setup()
