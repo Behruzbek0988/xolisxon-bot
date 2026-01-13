@@ -10,7 +10,7 @@ from aiogram.filters import Command
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, FSInputFile
 from aiogram.exceptions import TelegramBadRequest
 
-TOKEN = "8306323272:AAEofLN2K0aAS8wIw2hG4QAQaWDIVAeC4VM"
+TOKEN = 8306323272:AAGoM3woo5q352gl0S5eNkuK4deDK0Jta1I
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 bot = Bot(token=TOKEN)
